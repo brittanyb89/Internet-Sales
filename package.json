@@ -1,7 +1,8 @@
 {
-  "private": true,
-  "main": "app/index.js",
-  "type": "module",
+  "name": "module-13-challenge-orm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -13,7 +14,7 @@
     "url": "git@work.github.com:coding-boot-camp/module-13-challenge-orm.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Brittany",
   "license": "ISC",
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
