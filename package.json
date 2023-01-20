@@ -3,8 +3,18 @@
   "main": "app/index.js",
   "type": "module",
   "scripts": {
-    "test": "vitest"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@work.github.com:coding-boot-camp/module-13-challenge-orm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
     "@babel/plugin-syntax-import-assertions": "^7.20.0",
@@ -12,6 +22,13 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-xo": "^0.43.1",
     "prettier": "^2.7.1",
-    "vitest": "^0.25.3"
+    "vitest": "^0.25.3",
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^3.0.1",
+    "sequelize": "^6.28.0"
   }
 }
