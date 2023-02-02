@@ -7,6 +7,7 @@
 This project is a web application that uses Node an Express to build the backend (db schema and REST API) for an e-commerce site. The database is built using MySQL and the Sequelize ORM. The application is deployed to Heroku and uses the JawsDB add-on for the MySQL database. Developer simply took a working Express.js API and configured it to use Sequelize to interact with a MySQL database. I learned how to use the Sequelize CLI to create models and seed data to a MySQL database, and how to sync Sequelize models to a MySQL database.
 
 Repository: https://github.com/brittanyb89/Internet-Sales
+
 Watch demo functionality here: https://watch.screencastify.com/v/Ra38LX4p14kLHQo2kNbu
 
 # User Story
@@ -33,32 +34,44 @@ THEN I am able to successfully create, update, and delete data in my database
 
 1. To install the necessary dependencies, run the following command:
 
-npm i
-npm i dotenv
-npm i express
-npm i mysql2
-npm i sequelize
+   npm i
+   npm i dotenv
+   npm i express
+   npm i mysql2
+   npm i sequelize
 
 2. To create the database:
 
-mysql -u root -p
-source db/schema.sql;
-show databases;
-quit
+   mysql -u root -p
+   source db/schema.sql;
+   show databases;
+   quit
 
 3. To seed the database:
 
-npm run seed
+   npm run seed
 
 4. To run the application:
 
-npm start
+   npm start
 
 From there, you can view the application in the browser at http://localhost:3001/. You can also use Insomnia Core to test the API endpoints.
 
 ## Mock-Up
 
 The following animation demonstrates the application functionality:
+
+Schema Creation and Seed Data
+[Schema and Seed](images/Schema%20creation%20and%20Seed%20data.mp4)
+
+Category Routes
+[Category](images/Category-GET,%20POST,%20PUT,%20DELETE.mp4)
+
+Product Routes
+[Product](images/Product-GET,%20POST,%20PUT,%20DELETE.mp4)
+
+Tag Routes
+[Tag](images/Tag-GET,%20POST,%20PUT,%20DELETE.mp4)
 
 ## License
 
