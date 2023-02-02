@@ -7,7 +7,7 @@
 This project is a web application that uses Node an Express to build the backend (db schema and REST API) for an e-commerce site. The database is built using MySQL and the Sequelize ORM. The application is deployed to Heroku and uses the JawsDB add-on for the MySQL database. Developer simply took a working Express.js API and configured it to use Sequelize to interact with a MySQL database. I learned how to use the Sequelize CLI to create models and seed data to a MySQL database, and how to sync Sequelize models to a MySQL database.
 
 Repository: https://github.com/brittanyb89/Internet-Sales
-Watch a demonstration of the functionality here:
+Watch demo functionality here: https://watch.screencastify.com/v/Ra38LX4p14kLHQo2kNbu
 
 # User Story
 
@@ -59,17 +59,6 @@ From there, you can view the application in the browser at http://localhost:3001
 ## Mock-Up
 
 The following animation demonstrates the application functionality:
-Create Schema and Seed Data
-
-    GET routes to return all categories, all products, and all tags being tested in Insomnia Core
-
-    GET routes to return a single category, a single product, and a single tag being tested in Insomnia Core
-
-    POST, PUT, and DELETE routes for categories being tested in Insomnia Core
-
-    POST, PUT, and DELETE routes for products being tested in Insomnia Core
-
-    POST, PUT, and DELETE routes for tags being tested in Insomnia Core
 
 ## License
 
