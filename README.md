@@ -1,67 +1,86 @@
 # Internet-Sales
 
+![NPM](https://img.shields.io/npm/l/inquirer?style=plastic) ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath) ![npm collaborators](https://img.shields.io/npm/collaborators/inquirer) ![Dependents (via libraries.io)](https://img.shields.io/librariesio/dependents/npm/inquirer) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This project is a web application that uses Node an Express to build the backend (db schema and REST API) for an e-commerce site. The database is built using MySQL and the Sequelize ORM. The application is deployed to Heroku and uses the JawsDB add-on for the MySQL database. Developer simply took a working Express.js API and configured it to use Sequelize to interact with a MySQL database. I learned how to use the Sequelize CLI to create models and seed data to a MySQL database, and how to sync Sequelize models to a MySQL database.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+Repository: https://github.com/brittanyb89/Internet-Sales
+Watch a demonstration of the functionality here:
 
-## Table of Contents (Optional)
+# User Story
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+AS A manager at an internet retail company
+I WANT a back end for my e-commerce website that uses the latest technologies
+SO THAT my company can compete with other e-commerce companies
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+# Acceptance Criteria
 
-## Installation
+GIVEN a functional Express.js API
+WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
+THEN I am able to connect to a database using Sequelize
+WHEN I enter schema and seed commands
+THEN a development database is created and is seeded with test data
+WHEN I enter the command to invoke the application
+THEN my server is started and the Sequelize models are synced to the MySQL database
+WHEN I open API GET routes in Insomnia Core for categories, products, or tags
+THEN the data for each of these routes is displayed in a formatted JSON
+WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
+THEN I am able to successfully create, update, and delete data in my database
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+## Installation/Usage
 
-## Usage
+1. To install the necessary dependencies, run the following command:
 
-Provide instructions and examples for use. Include screenshots as needed.
+npm i
+npm i dotenv
+npm i express
+npm i mysql2
+npm i sequelize
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+2. To create the database:
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+mysql -u root -p
+source db/schema.sql;
+show databases;
+quit
 
-## Credits
+3. To seed the database:
 
-List your collaborators, if any, with links to their GitHub profiles.
+npm run seed
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+4. To run the application:
 
-If you followed tutorials, include links to those here as well.
+npm start
+
+From there, you can view the application in the browser at http://localhost:3001/. You can also use Insomnia Core to test the API endpoints.
+
+## Mock-Up
+
+The following animation demonstrates the application functionality:
+Create Schema and Seed Data
+
+    GET routes to return all categories, all products, and all tags being tested in Insomnia Core
+
+    GET routes to return a single category, a single product, and a single tag being tested in Insomnia Core
+
+    POST, PUT, and DELETE routes for categories being tested in Insomnia Core
+
+    POST, PUT, and DELETE routes for products being tested in Insomnia Core
+
+    POST, PUT, and DELETE routes for tags being tested in Insomnia Core
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+![NPM](https://img.shields.io/npm/l/inquirer?style=plastic)
 
----
+MIT License
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+Copyright (c) 2022 Brittany Burton
 
-## Badges
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
