@@ -35,16 +35,23 @@ THEN I am able to successfully create, update, and delete data in my database
 1. To install the necessary dependencies, run the following command:
 
    npm i
+
    npm i dotenv
+
    npm i express
+
    npm i mysql2
+
    npm i sequelize
 
 2. To create the database:
 
    mysql -u root -p
+
    source db/schema.sql;
+
    show databases;
+
    quit
 
 3. To seed the database:
